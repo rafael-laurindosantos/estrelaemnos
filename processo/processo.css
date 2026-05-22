@@ -1,0 +1,69 @@
+.cards {
+
+      min-height: 10px;
+      max-height: 15px;
+
+}
+
+.container {
+      gap: 0.1px;
+      
+
+}
+
+.form {
+      display: flex;
+      flex-direction: column;
+      min-height: 200px;
+      padding: 10px;
+      text-transform: uppercase;
+      font-size: 12px;
+      align-items: center;
+      letter-spacing: 0.8px;
+      color: #5a4a42e5;
+      background-color: #e1cfbf86;
+
+}
+
+
+button:hover {
+      background-color: rgba(255, 233, 173, 0.411);
+      cursor: pointer;
+}
+
+
+.catalogo {
+      background-color: #5a4a4256;
+      padding: 10px;
+      border-radius: 10px 0 10px 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.185);
+}
+
+.catalogo:hover {
+      cursor: default;
+      background-color: #836b5f60;
+}
+
+img {
+      border-radius: 8px;
+      max-width: 250px;
+      min-width: 250px;
+      max-height: 250px;
+      min-height: 250px;
+}
+
+.cards_catalogo {
+      background-color: rgba(90, 81, 70, 0.13);
+      border-radius: 8px;
+      padding: 2px;
+}
+
+.cards_catalogo:hover {
+      background-color: rgba(151, 144, 136, 0.13);
+      
+}
+
+.texto_processo {
+      text-transform: none;
+}
+

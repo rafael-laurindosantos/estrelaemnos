@@ -52,6 +52,9 @@ button:hover {
 
 
 .catalogo {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       background-color: #5a4a4256;
       padding: 10px;
       border-radius: 10px 0 10px 0;
@@ -65,10 +68,10 @@ button:hover {
 
 img {
       border-radius: 8px;
-      min-height: 200px;
-      min-width: 200px;
-      max-height: 200px;
-      max-width: 200px;
+      min-height: 130px;
+      min-width: 130px;
+      max-height: 130px;
+      max-width: 130px;
 }
 
 .cards_catalogo {

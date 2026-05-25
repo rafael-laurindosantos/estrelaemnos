@@ -182,3 +182,7 @@ footer:hover {
       background-color: #c5b7a669;
       cursor: default;
 }
+
+button {
+      min-height: 22px;
+}

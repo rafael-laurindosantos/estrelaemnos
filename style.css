@@ -1,5 +1,5 @@
 body {
-      background-color: #ffead394;
+      background-color: #aea294;
       margin: 0;
       align-items: center;
       display: flex;
@@ -7,6 +7,7 @@ body {
       justify-content: center;
       padding: 40px;
       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+      box-sizing: border-box;
 }
 
 h1 {
@@ -14,65 +15,82 @@ h1 {
 }
 
 .inicio {
+      display: flex;
+      align-items: center;
+      background-color: white;
+      color: #141414;
       letter-spacing: 2.4px;
       position: absolute;
       top: 62%;
       left: 6%;
       text-transform: uppercase;
       font-size: 12px;
-      background-color: #cfc0c0a6;
-      border-radius: 10px 0 10px 0;
-      padding: 11px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.185);
-      color: #36312e9d;
+      border-radius: 20px;
+      padding: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.185);      
       text-shadow: 0 2px 6px rgba(0, 0, 0, 0.185);
+}
+
+.btn-inicio {
+      display: flex;
 }
 
 .inicio:hover {
       animation: tremidinha 0.2s ease-in-out;
       cursor: pointer;
-      background-color: #dfd3c36c;
+      background-color: #eeeeee;
+      
 }
 
-.titulo {
-      letter-spacing: 0.6px;
-      position: absolute;
-      top: 10%;
-      left: 48%;
-      padding-right: 10px;
-      text-transform: uppercase;
-      font-size: 14px;
-      background-color: rgba(0, 0, 0, 0.377);
-      color: #fffdfba4;
-      border-radius: 10px 0 10px 0;
-      padding: 5px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.185);
-      white-space: nowrap;
+#btn-selecionado {
+      background-color: #fbf3ea;
+      color: rgba(0, 0, 0, 0.712);
+      border: solid 0.5px rgba(0, 0, 0, 0.171);
 }
 
+#btn-selecionado-inicio {
+      background-color: #fbf3ea00;
+      border: solid 0.5px rgba(0, 0, 0, 0.171);
+}
+
+.img-titulo {
+      
+      width: 400px;
+      height: auto !important;
+      display: block;
+      max-width: 100%;
+      align-self: flex-start;
+      object-fit: contain;
+      justify-content: center;
+      
+      
+        
+}
 
 .texto {
       letter-spacing: 0.6px;
       position: absolute;
-      top: 27%;
-      left: 48%;
+      top: 39%;
+      left: 72%;
       font-size: 11px;
-      background-color: rgba(0, 0, 0, 0.377);
-      color: #fffdfba4;
-      border-radius: 10px 0 10px 0;
-      padding: 5px;
+      background-color: #141414;
+      color: rgb(230, 230, 230);
+      border-radius: 30px;
+      padding: 8px;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.185);
       white-space: nowrap;
 }
 
 .titulo:hover,
 .texto:hover {
-      background-color: rgba(26, 26, 26, 0.377);
+      
       cursor: default;
 }
 
-.topo,
-img {
+.topo {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
       position: relative;
       margin-top: 0;
       padding-top: 0;
@@ -80,109 +98,136 @@ img {
       height: 200px;
       background-image: url('./img/topo.jpg');
       background-size: cover;
-      width: 100%;
       max-height: 25vh;
       background-position: 20% 30%;
+      box-sizing: border-box;
 }
 
-
 .container {
-      background-image: url('./img/fundo-container.jpg');
-      background-size: 130%;
-      background-position: 50% 10%;
+      background-color: #f8efe4;
       width: 100%;
       max-width: 900px;
-      min-height: 70dvh;
+      min-height: 65dvh;
       overflow: hidden;
       margin: 0 auto;
       box-sizing: border-box;
-      box-shadow: 5px 15px 35px rgba(0, 0, 0, 0.322);
+      box-shadow: 3px 4px 16px rgba(0, 0, 0, 0.200);
       display: flex;
       flex-direction: column;
-      border-radius: 12px;
-      gap: 10px;
+      border-radius: 15px;
+      
+}
+
+.div-cards {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      width: 100%;
+}
+
+.icon {
+      max-width: 18px;
+      padding-right: 10px;
+}
+
+.icon-titulo {
+      max-width: 18px;
+      padding-right: 10px;
 }
 
 article {
       display: flex;
-      gap: 20px;
-      padding: 20px;
+      gap: 25px;
+      padding: 25px;
       margin: 0;
       padding-top: 0;
-
-
-
+      box-sizing: border-box;
+      width: 100%;
+      max-width: 100%;
 }
 
 .cards {
       display: flex;
       justify-content: center;
-      align-items: center;
-      background-color: #cfc0c060;
-      min-height: 90px;
-      border-radius: 20px 0 20px 0;
-      padding: 10px;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.185);
+      align-items: center;      
+      min-height: 40px;
+      min-width: 150px;
+      border-radius: 26px;
+      padding: 5px;
+      box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.05);
       letter-spacing: 2.4px;
       text-shadow: 0 2px 6px rgba(0, 0, 0, 0.185);
-
+      background-color: #ffffff;
+      color: #141414;
+      box-sizing: border-box;
+      border: solid 1px rgba(0, 0, 0, 0.116);
 }
 
 a {
       flex: 1;
-      text-decoration: none;
-      color: #5a4a42b7;
+      text-decoration: none;      
       text-transform: uppercase;
       font-size: 13px;
-
 }
 
-
+.a-footer {
+      flex: none;
+      
+}
 
 .cards:hover {
-
-
       animation: tremidinha 0.2s ease-in-out;
       cursor: pointer;
-      background-color: #dfd3c36c;
-
+      background-color: #ffffff7c;
 }
 
 @keyframes tremidinha {
-      0% {
-            transform: translate(0, 0);
-      }
-
-      25% {
-            transform: translate(-1px, -1px);
-      }
-
-      50% {
-            transform: translate(0.5px, 0.5px);
-      }
-
-      75% {
-            transform: translate(-1px, -1px);
-      }
-
-      100% {
-            transform: translate(0, 0);
-      }
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(-1px, -1px); }
+      50% { transform: translate(0.5px, 0.5px); }
+      75% { transform: translate(-1px, -1px); }
+      100% { transform: translate(0, 0); }
 }
-
 
 footer {
-      text-align: center;
-      font-size: 18px;
-      color: rgba(0, 0, 0, 0.5);
-      background-color: #a8917448;
+      display: flex;
+      justify-content: center;
+      margin-top: auto;
+      background-color: #ffffff;
+            
 }
 
-footer:hover {
-      background-color: #c5b7a669;
-      cursor: default;
+.icon-footer {
+      max-width: 18px;
+      padding: 15px;
+      
 }
 
 button {
       min-height: 22px;
+}
+
+@media (max-width: 600px) {
+      body {
+            padding: 10px;
+      }
+      article {
+            flex-direction: column;
+            gap: 15px;
+            padding: 10px 20px;
+      }
+      .titulo {
+            left: 5%;
+            top: 10%;
+            white-space: normal;
+      }
+      .texto {
+            left: 5%;
+            top: 39%;
+            white-space: normal;
+      }
+      .inicio {
+            left: 5%;
+            top: 65%;
+      }
 }

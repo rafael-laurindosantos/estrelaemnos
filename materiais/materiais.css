@@ -1,7 +1,8 @@
 .cards {
 
-      min-height: 10px;
-      max-height: 15px;
+      
+      max-height: 20px;
+
 
 }
 
@@ -32,40 +33,27 @@ button:hover {
 }
 
 
-.catalogo {
-      background-color: #5a4a4256;
-      padding: 10px;
-      border-radius: 10px 0 10px 0;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.185);
+.materiais {
+      font-size: 15px;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.185);
 }
 
-.catalogo:hover {
+.materiais:hover {
       cursor: default;
-      background-color: #836b5f60;
+      
 }
 
-img {
+.img-materiais {
       border-radius: 7px;
       max-width: 280px;
       min-width: 280px;
-      
-      
-      
+           
       
 }
 
-.cards_catalogo {
-      background-color: rgba(90, 81, 70, 0.13);
-      border-radius: 8px;
-      padding: 2px;
-}
 
-.cards_catalogo:hover {
-      background-color: rgba(151, 144, 136, 0.13);
-      
-}
 
-.texto_processo {
+.texto_materiais {
       text-transform: none;
 }
 

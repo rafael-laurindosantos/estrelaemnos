@@ -1,9 +1,11 @@
 .cards {
 
-      min-height: 10px;
-      max-height: 15px;
+      
+      max-height: 20px;
+
 
 }
+
 
 .container {
       gap: 0.1px;
@@ -41,24 +43,24 @@ input:hover {
 }
 
 button {
-      border-radius: 8px;
-      border: solid 1px;
-      background-color: rgba(240, 248, 255, 0.199);
+      border-radius: 28px;
+      background-color: black;
+      color: white;
+      padding: 8px;
 }
 
 button:hover {
-      background-color: rgba(255, 233, 173, 0.137);
+      background-color: rgb(61, 61, 61);
       cursor: pointer;
 }
 
-.cadastro {
-      background-color: #5a4a4256;
-      padding: 10px;
-      border-radius: 10px 0 10px 0;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.185);
+
+.pedidos {
+      font-size: 15px;
+      text-shadow: 0 2px 6px rgba(0, 0, 0, 0.185);
 }
 
-.cadastro:hover {
+.pedidos:hover {
       cursor: default;
-      background-color: #836b5f60;
+      
 }

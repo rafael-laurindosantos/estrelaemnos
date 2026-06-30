@@ -64,28 +64,30 @@
 
             </article>
 
-
-
-
             <section class="form">
                   <h4 class="login">#Login</h4>
-                  <form>
+                  
+                  <!-- AJUSTE: onsubmit adicionado aqui -->
+                  <form onsubmit="fazerLogin(event)">
 
-
+                        <!-- AJUSTE: id="nomeusuario" adicionado aqui -->
                         <label>#Usuário:</label>
-                        <input type="text">
+                        <input type="text" id="nomeusuario">
                         <br><br>
+                        
+                        <!-- AJUSTE: id="senhausuario" adicionado aqui -->
                         <label>#Senha:</label>
-                        <input type="password">
+                        <input type="password" id="senhausuario">
                         <br><br>
+                        
                         <a class="esqueci" href="../esqueceu_senha/esqueceu_senha.html">Esqueci minha senha</a>
+                        <br><br>
 
-
-                  </form><br><br>
-
-                  <button>
-                        Entrar
-                  </button>
+                        <!-- AJUSTE: Botão movido para dentro do form com type="submit" -->
+                        <button type="submit">
+                              Entrar
+                        </button>
+                  </form>
 
             </section>
             <footer>
@@ -93,6 +95,8 @@
             </footer>
       </div>
 
+      <!-- AJUSTE: Import do script na mesma pasta do HTML -->
+      <script src="login.js"></script>
 </body>
 
 </html>

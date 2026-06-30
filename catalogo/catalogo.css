@@ -1,9 +1,5 @@
-
-
 .container {
       gap: 0.1px;
-      
-
 }
 
 #form {
@@ -17,16 +13,14 @@
       letter-spacing: 0.8px;
       color: #5a4a42e5;
       background-color: #e1cfbf86;
-      
-      
-
 }
 
 #form-catalogo {
       display: flex;
       gap: 15px;
       flex-wrap: wrap;
-      
+      justify-content: center;
+      width: 100%;            
 }
 
 input {
@@ -57,7 +51,6 @@ button:hover {
       cursor: pointer;
 }
 
-
 .catalogo {
       font-size: 15px;
       text-shadow: 0 2px 6px rgba(0, 0, 0, 0.185);
@@ -65,7 +58,6 @@ button:hover {
 
 .catalogo:hover {
       cursor: default;
-      
 }
 
 .img-catalogo {
@@ -85,14 +77,10 @@ button:hover {
       max-width: 150px;
       border: solid 1px rgba(0, 0, 0, 0.116);
       padding: 10px;
-      
-      
-      
 }
 
 .cards_catalogo:hover {
-      cursor: default;
-      
+      cursor: pointer;
 }
 
 .texto_card {

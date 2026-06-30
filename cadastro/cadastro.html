@@ -63,33 +63,35 @@
 
             </article>
 
-
-
-
             <section class="form">
                   <h4 class="cadastro">#Cadastro</h4>
-                  <form>
+                  
+                  <!-- AJUSTE: onsubmit adicionado aqui -->
+                  <form onsubmit="realizarCadastro(event)">
 
-
-                        <label>#Nome:</label>
-
-                        <input type="text">
+                        <!-- AJUSTE: id="input-usuario" adicionado aqui -->
+                        <label>#Nome (Usuário):</label>
+                        <input type="text" id="input-usuario">
                         <br><br>
+                        
                         <label>#Tel. :</label>
                         <input type="number">
                         <br><br>
+                        
                         <label>#E-mail:</label>
                         <input type="email">
                         <br><br>
-                        <label>#Endereço:</label>
-                        <input type="text">
+                        
+                        <!-- AJUSTE: Mudado para tipo password e id="input-senha" adicionado -->
+                        <label>#Senha:</label>
+                        <input type="password" id="input-senha">
+                        <br><br>
 
-
-                  </form><br><br>
-
-                  <button>
-                        Enviar
-                  </button>
+                        <!-- AJUSTE: Botão movido para dentro do form com type="submit" -->
+                        <button type="submit">
+                              Enviar
+                        </button>
+                  </form>
 
             </section>
             <footer>
@@ -97,6 +99,8 @@
             </footer>
       </div>
 
+      <!-- AJUSTE: Import do script na mesma pasta do HTML -->
+      <script src="cadastro.js"></script>
 </body>
 
 </html>

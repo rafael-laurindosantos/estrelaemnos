@@ -56,15 +56,14 @@ h1 {
 }
 
 .img-titulo {
-      
+      position: absolute; 
+      right: 30px; 
+      top: 50%; 
+      transform: translateY(-50%); 
       width: 390px;
       height: auto !important;
-      display: block;
-      max-width: 100%;
-      align-self: flex-start;
+      max-width: 50vw; 
       object-fit: contain;
-         
-        
 }
 
 .texto {
@@ -194,6 +193,7 @@ footer {
       justify-content: center;
       margin-top: auto;
       background-color: #ffffff;
+      font-size: 15px;
             
 }
 
